@@ -27,7 +27,7 @@ const Home = () => {
 	const [today, setToday] = useState("");
 	const [error, setError] = useState("");
 	const [formData, setFormData] = useState<FormData>({
-		pageName: "",
+		pageName: "PAGENAME",
 		fullName: "",
 		email: "",
 		phone: "",
@@ -122,7 +122,7 @@ const Home = () => {
 						, please verify:
 					</p>
 					<div className="mt-4 flex flex-col gap-2">
-						<div>
+						<div className="hidden">
 							<input
 								autoFocus
 								className="w-full rounded-full border border-gray-300 p-4 focus:border-blue-500 focus:outline-none"
